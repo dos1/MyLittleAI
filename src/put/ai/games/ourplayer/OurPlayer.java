@@ -5,6 +5,7 @@ import put.ai.games.game.Board;
 import put.ai.games.game.Move;
 import put.ai.games.game.Player;
 
+
 public class OurPlayer extends Player {
 
     @Override
@@ -71,6 +72,5 @@ public class OurPlayer extends Player {
         return losingMove;
         
     }
-    
     
 }
