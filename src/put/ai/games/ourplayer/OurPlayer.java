@@ -8,6 +8,8 @@ import put.ai.games.game.Player;
 
 public class OurPlayer extends Player {
 
+    private final Random random = new Random(0xdeadbeef);
+
     @Override
     public String getName() {
         return "Sebastian Krzyszkowiak 106553 Piotr Siupa 106605";
@@ -48,6 +50,22 @@ public class OurPlayer extends Player {
         }
         return nothingSpecialMove;
         
+    }
+    
+    private int heuristics(final Board board, final Color player) {
+    	final int MILIJON = 1000000;
+    	final int POL_MILIJONA = 500000;
+    	final Color winner = board.getWinner(getOpponent(player));  //TODO check it
+    	if (winner != null) {
+			if (winner.equals(player))
+				return MILIJON;
+			if (winner.equals(Color.EMPTY))
+				return -POL_MILIJONA;
+			else
+				return -MILIJON;
+    	}
+		
+		return random.nextInt(100);
     }
     
 }
