@@ -12,7 +12,7 @@ public class OurPlayer extends Player {
 
     @Override
     public String getName() {
-        return "Nasz gracz";
+        return "Sebastian Krzyszkowiak 106553 Piotr Siupa 106605";
     }
 
     @Override
