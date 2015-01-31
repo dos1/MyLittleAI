@@ -1,2 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: put.ai.games.usplayer.UsPlayer
+Main-Class: put.ai.games.ourplayer.OurPlayer

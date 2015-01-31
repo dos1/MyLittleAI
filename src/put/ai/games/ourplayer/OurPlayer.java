@@ -1,4 +1,4 @@
-package put.ai.games.usplayer;
+package put.ai.games.ourplayer;
 
 import java.util.List;
 import java.util.Random;
@@ -6,7 +6,7 @@ import put.ai.games.game.Board;
 import put.ai.games.game.Move;
 import put.ai.games.game.Player;
 
-public class UsPlayer extends Player {
+public class OurPlayer extends Player {
 
     private Random random=new Random(0xdeadbeef);
 
